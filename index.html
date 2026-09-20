@@ -50,25 +50,53 @@
       <!-- Desktop navigation -->
       <nav class="desktop-nav" aria-label="Main navigation">
 
-        <a href="#story">
+        <a href="#story" data-i18n="navStory">
           Our Story
         </a>
 
-        <a href="#help">
+        <a href="#help" data-i18n="navHelp">
           How We Help
         </a>
 
-        <a href="#contact">
+        <a href="#contact" data-i18n="navContact">
           Contact
         </a>
 
       </nav>
 
 
+      <!-- Desktop language switcher -->
+
+      <div
+        class="language-switcher"
+        role="group"
+        aria-label="Language"
+      >
+        <button
+          class="language-button active"
+          type="button"
+          data-language="en"
+        >
+          EN
+        </button>
+
+        <span aria-hidden="true">/</span>
+
+        <button
+          class="language-button"
+          type="button"
+          data-language="de"
+        >
+          DE
+        </button>
+      </div>
+
+
       <!-- Desktop donation -->
       <button
         class="btn btn-primary nav-donate donate-trigger"
         type="button"
+        data-i18n="donate"
       >
         Donate
       </button>
@@ -100,21 +128,50 @@
       aria-label="Mobile navigation"
     >
 
-      <a href="#story">
+      <a href="#story" data-i18n="navStory">
         Our Story
       </a>
 
-      <a href="#help">
+      <a href="#help" data-i18n="navHelp">
         How We Help
       </a>
 
-      <a href="#contact">
+      <a href="#contact" data-i18n="navContact">
         Contact
       </a>
+
+
+      <!-- Mobile language switcher -->
+
+      <div
+        class="language-switcher mobile-language-switcher"
+        role="group"
+        aria-label="Language"
+      >
+        <button
+          class="language-button active"
+          type="button"
+          data-language="en"
+        >
+          EN
+        </button>
+
+        <span aria-hidden="true">/</span>
+
+        <button
+          class="language-button"
+          type="button"
+          data-language="de"
+        >
+          DE
+        </button>
+      </div>
+
 
       <button
         class="btn btn-primary donate-trigger"
         type="button"
+        data-i18n="donate"
       >
         Donate
       </button>
@@ -145,11 +202,11 @@
 
         <div class="hero-content">
 
-          <h1>
+          <h1 data-i18n="heroTitle">
             Together, we can give every child a reason to hope.
           </h1>
 
-          <p class="hero-description">
+          <p class="hero-description" data-i18n="heroText">
             Together for Children is dedicated to supporting
             underprivileged children across Africa by providing
             access to essential needs, education, healthcare,
@@ -162,12 +219,13 @@
             <button
               class="btn btn-primary btn-large donate-trigger"
               type="button"
+              data-i18n="donate"
             >
               Donate now
             </button>
 
 
-            <a href="#story" class="hero-story-link">
+            <a href="#story" class="hero-story-link" data-i18n="ourStory">
 
               Our story
 
@@ -231,15 +289,15 @@
 
     <div class="story-content">
 
-      <span class="section-label">
+      <span class="section-label" data-i18n="storyLabel">
         Our Story
       </span>
 
-      <h2>
+      <h2 data-i18n="storyTitle">
         Every child deserves to feel safe, cared for, and hopeful.
       </h2>
 
-      <p class="story-intro">
+      <p class="story-intro" data-i18n="storyIntro">
         Together for Children began with a simple belief:
         every child deserves the opportunity to build a
         brighter future.
@@ -247,27 +305,18 @@
 
       <div class="story-text">
 
-        <p>
+        <p data-i18n="storyParagraph1">
           We created this initiative to bring people together
           to support children facing difficult circumstances,
           including orphans and children from disadvantaged
           backgrounds.
         </p>
 
-        <p>
+        <p data-i18n="storyParagraph2">
           Through donations and community support, we aim to
           help provide essential needs, educational
           opportunities, protection, and a chance for a
           brighter future.
-        </p>
-
-        <p>
-          Marlon Ritter has authorized Together for Children
-          to use his name and approved materials in connection
-          with this charitable initiative. His authorization
-          has helped us raise awareness and encourage people
-          to come together for a cause that puts children
-          first.
         </p>
 
       </div>
@@ -277,7 +326,7 @@
 
         <span class="story-message-line"></span>
 
-        <p>
+        <p data-i18n="storyContribution">
           Every contribution, no matter the size, can help
           make a meaningful difference.
         </p>
@@ -288,9 +337,315 @@
       <button
         class="btn btn-primary btn-large donate-trigger"
         type="button"
+        data-i18n="helpDifference"
       >
         Help make a difference
       </button>
+
+    </div>
+
+  </div>
+
+
+    <!-- ==================================
+         STORY GALLERY
+    =================================== -->
+
+    <div class="story-gallery">
+
+      <div class="story-gallery-header">
+
+        <div class="story-gallery-text">
+
+          <span
+            class="story-gallery-label"
+            data-i18n="galleryLabel"
+          >
+            More moments
+          </span>
+
+          <p
+            class="story-gallery-hint"
+            data-i18n="galleryHint"
+          >
+            Scroll or swipe to see more.
+          </p>
+
+        </div>
+
+
+        <div class="story-gallery-controls">
+
+          <button
+            class="story-gallery-button"
+            id="storyGalleryPrev"
+            type="button"
+            aria-label="Scroll back through the images"
+          >
+            <span aria-hidden="true">←</span>
+          </button>
+
+          <button
+            class="story-gallery-button"
+            id="storyGalleryNext"
+            type="button"
+            aria-label="Scroll forward through the images"
+          >
+            <span aria-hidden="true">→</span>
+          </button>
+
+        </div>
+
+      </div>
+
+
+      <div
+        class="story-gallery-track"
+        id="storyGallery"
+        role="region"
+        aria-label="Photos of the children and communities we support"
+        tabindex="0"
+      >
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/2.jpg"
+            alt="A large group of children laughing together outdoors"
+            width="736"
+            height="488"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/5.jpg"
+            alt="Children making heart shapes with their hands"
+            width="736"
+            height="981"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/6.jpg"
+            alt="Close-up of a group of smiling children"
+            width="1080"
+            height="720"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/8.jpg"
+            alt="A young girl hugging a teddy bear she has just been given"
+            width="564"
+            height="762"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/4.jpg"
+            alt="Children holding food boxes during a meal distribution"
+            width="1035"
+            height="1040"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/9.jpg"
+            alt="Students raising their hands in a classroom"
+            width="1280"
+            height="854"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/10.jpg"
+            alt="Schoolchildren in uniform smiling together in class"
+            width="1280"
+            height="853"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/12.jpg"
+            alt="Schoolchildren in uniform waving and smiling outdoors"
+            width="1194"
+            height="795"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/11.jpg"
+            alt="Children and adults gathered together in a busy street"
+            width="1280"
+            height="853"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+
+        <figure class="story-gallery-item">
+
+          <img
+            src="./assets/images/7.jpg"
+            alt="Children on a sandy shore, one holding up a red football jersey"
+            width="853"
+            height="1280"
+            loading="lazy"
+            decoding="async"
+          />
+
+        </figure>
+
+      </div>
+
+    </div>
+
+</section>
+
+
+<!-- ========================================
+     MARLON RITTER AUTHORIZATION
+========================================= -->
+
+<section class="authorization-section" id="authorization">
+
+  <div class="container authorization-container">
+
+    <!-- ====================================
+         CONTENT
+    ===================================== -->
+
+    <div class="authorization-content">
+
+      <span class="section-label" data-i18n="authorizationLabel">
+        Authorization &amp; Support
+      </span>
+
+      <h2 data-i18n="authorizationTitle">
+        Supporting a cause that puts children first.
+      </h2>
+
+      <p class="authorization-lead" data-i18n="authorizationLead">
+        Marlon Ritter has authorized Together for Children
+        to use his name and approved materials in connection
+        with this charitable initiative.
+      </p>
+
+      <p class="authorization-text" data-i18n="authorizationText">
+        His authorization has helped us raise awareness and
+        encourage people to come together for a cause that
+        puts children first.
+      </p>
+
+
+      <!-- Authorization detail -->
+
+      <div class="authorization-note">
+
+        <span
+          class="authorization-note-mark"
+          aria-hidden="true"
+        >
+          ✓
+        </span>
+
+        <div>
+
+          <strong data-i18n="authorizedUse">
+            Authorized use
+          </strong>
+
+          <p data-i18n="authorizedUseText">
+            His name and approved materials are used in
+            connection with the Together for Children
+            charitable initiative.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- ====================================
+         MARLON PHOTO
+    ===================================== -->
+
+    <div class="authorization-person">
+
+      <div class="authorization-photo">
+
+        <img
+          src="./assets/images/marlon ritter.jpg"
+          alt="Marlon Ritter"
+          loading="lazy"
+        />
+
+      </div>
+
+
+      <div class="authorization-person-info">
+
+        <strong>
+          Marlon Ritter
+        </strong>
+
+        <span data-i18n="authorizationLabel">
+          Authorization &amp; Support
+        </span>
+
+      </div>
 
     </div>
 
@@ -307,13 +662,18 @@
 
   <div class="container hope-container">
 
-    <span class="hope-eyebrow">
+    <span class="hope-eyebrow" data-i18n="organizationName">
       Together for Children
     </span>
 
     <h2>
-      Together, we can give children more than support.
-      <span>We can give them hope.</span>
+      <span data-i18n="hopePart1">
+        Together, we can give children more than support.
+      </span>
+
+      <span data-i18n="hopePart2">
+        We can give them hope.
+      </span>
     </h2>
 
   </div>
@@ -337,11 +697,11 @@
 
       <div class="help-heading">
 
-        <span class="section-label">
+        <span class="section-label" data-i18n="helpLabel">
           How your donation helps
         </span>
 
-        <h2>
+        <h2 data-i18n="helpTitle">
           Your generosity becomes practical support.
         </h2>
 
@@ -350,7 +710,7 @@
 
       <div class="help-introduction">
 
-        <p>
+        <p data-i18n="helpIntro">
           Every donation to Together for Children is intended
           to support children facing difficult circumstances
           and help provide the essentials they need to grow,
@@ -379,11 +739,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="educationTitle">
             Education
           </h3>
 
-          <p>
+          <p data-i18n="educationText">
             School supplies, books, uniforms, tuition
             assistance, and learning resources.
           </p>
@@ -403,11 +763,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="foodTitle">
             Food &amp; Nutrition
           </h3>
 
-          <p>
+          <p data-i18n="foodText">
             Nutritious meals and essential food supplies
             for children in need.
           </p>
@@ -427,11 +787,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="healthcareTitle">
             Healthcare
           </h3>
 
-          <p>
+          <p data-i18n="healthcareText">
             Basic medical care, health checkups, medicines,
             and urgent healthcare assistance where
             appropriate.
@@ -452,11 +812,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="essentialsTitle">
             Clothing &amp; Essentials
           </h3>
 
-          <p>
+          <p data-i18n="essentialsText">
             Clothing, shoes, hygiene products, bedding,
             and other everyday necessities.
           </p>
@@ -476,11 +836,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="protectionTitle">
             Child Protection &amp; Support
           </h3>
 
-          <p>
+          <p data-i18n="protectionText">
             Working with qualified local organizations
             to provide safe environments and appropriate
             support for vulnerable children.
@@ -501,11 +861,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="communityTitle">
             Community Projects
           </h3>
 
-          <p>
+          <p data-i18n="communityText">
             Initiatives that improve children's access
             to education, clean water, sanitation,
             and other essential services.
@@ -526,11 +886,11 @@
 
         <div class="help-item-content">
 
-          <h3>
+          <h3 data-i18n="emergencyTitle">
             Emergency Assistance
           </h3>
 
-          <p>
+          <p data-i18n="emergencyText">
             Responding to urgent needs affecting children
             and families in vulnerable situations.
           </p>
@@ -551,11 +911,11 @@
 
       <div class="help-footer-content">
 
-        <h3>
+        <h3 data-i18n="contributionTitle">
           Every contribution matters.
         </h3>
 
-        <p>
+        <p data-i18n="contributionText">
           Together, we can turn generosity into practical
           support and give children an opportunity for a
           brighter future.
@@ -567,6 +927,7 @@
       <button
         class="btn btn-primary btn-large donate-trigger"
         type="button"
+        data-i18n="donate"
       >
         Donate now
       </button>
@@ -576,78 +937,6 @@
   </div>
 
 </section>
-
-
-<!-- Phase 4 starts here -->
-<div id="contact"></div>
-
-<!-- ========================================
-     PHOTO STORY
-========================================= -->
-
-<section class="photo-section">
-
-  <div class="container">
-
-    <div class="photo-header">
-
-      <span class="section-label">
-        Why it matters
-      </span>
-
-      <h2>
-        Hope grows when people come together.
-      </h2>
-
-    </div>
-
-
-    <div class="photo-grid">
-
-      <!-- Large image -->
-
-      <figure class="photo-item photo-item-large">
-
-        <img
-          src="./assets/images/2.jpg"
-          alt="Children supported through Together for Children"
-          loading="lazy"
-        />
-
-      </figure>
-
-
-      <!-- Small image -->
-
-      <figure class="photo-item">
-
-        <img
-          src="./assets/images/6.jpg"
-          alt="Supporting children and communities"
-          loading="lazy"
-        />
-
-      </figure>
-
-
-      <!-- Small image -->
-
-      <figure class="photo-item">
-
-        <img
-          src="./assets/images/7.jpg"
-          alt="Creating opportunities for children"
-          loading="lazy"
-        />
-
-      </figure>
-
-    </div>
-
-  </div>
-
-</section>
-
 
 
 <!-- ========================================
@@ -662,7 +951,7 @@
       “
     </span>
 
-    <blockquote>
+    <blockquote data-i18n="impactQuote">
       Every child deserves the opportunity to learn,
       grow, feel safe, and look toward the future
       with hope.
@@ -691,11 +980,11 @@
 
     <div class="transparency-heading">
 
-      <span class="section-label">
+      <span class="section-label" data-i18n="commitmentLabel">
         Our commitment
       </span>
 
-      <h2>
+      <h2 data-i18n="commitmentTitle">
         Giving with purpose and transparency.
       </h2>
 
@@ -706,19 +995,19 @@
 
     <div class="transparency-content">
 
-      <p class="transparency-lead">
+      <p class="transparency-lead" data-i18n="transparencyLead">
         We are committed to using donations responsibly
         and providing clear information about how funds
         are allocated.
       </p>
 
-      <p>
+      <p data-i18n="transparencyText1">
         Where possible, donations will be directed toward
         programs and services that have a direct benefit
         for children.
       </p>
 
-      <p>
+      <p data-i18n="transparencyText2">
         Contributions may support education, food and
         nutrition, healthcare, clothing and essentials,
         child protection, community projects, and
@@ -728,7 +1017,9 @@
 
       <a href="#help" class="transparency-link">
 
-        See how donations help
+        <span data-i18n="seeDonationHelp">
+          See how donations help
+        </span>
 
         <span aria-hidden="true">
           →
@@ -754,15 +1045,15 @@
 
     <div class="donation-cta-content">
 
-      <span class="donation-cta-label">
+      <span class="donation-cta-label" data-i18n="organizationName">
         Together for Children
       </span>
 
-      <h2>
+      <h2 data-i18n="ctaTitle">
         A brighter future can start with one act of kindness.
       </h2>
 
-      <p>
+      <p data-i18n="ctaText">
         Your contribution can help turn generosity into
         practical support for children and communities
         in need.
@@ -774,6 +1065,7 @@
     <button
       class="btn donation-cta-button donate-trigger"
       type="button"
+      data-i18n="donate"
     >
       Donate now
     </button>
@@ -783,11 +1075,363 @@
 </section>
 
 
-<!-- Phase 5 starts here -->
+<!-- ========================================
+     CONTACT
+========================================= -->
 
-<div id="contact"></div>
+<section
+  class="contact-section"
+  id="contact"
+>
+  <div class="container contact-container">
+
+    <!-- Left side -->
+
+    <div class="contact-intro">
+
+      <span
+        class="section-label"
+        data-i18n="contactLabel"
+      >
+        Contact
+      </span>
+
+      <h2 data-i18n="contactTitle">
+        We're here to help.
+      </h2>
+
+      <p data-i18n="contactIntro">
+        Have a question about Together for Children
+        or making a donation? Get in touch with us.
+      </p>
+
+    </div>
+
+
+    <!-- Contact details -->
+
+    <div class="contact-details">
+
+      <!-- EMAIL -->
+
+      <a
+        class="contact-item"
+        href="mailto:togetherforchildrenorg@gmail.com"
+      >
+
+        <div
+          class="contact-icon"
+          aria-hidden="true"
+        >
+          @
+        </div>
+
+        <div class="contact-item-content">
+
+          <span data-i18n="emailLabel">
+            Email
+          </span>
+
+          <strong>
+            togetherforchildrenorg@gmail.com
+          </strong>
+
+        </div>
+
+        <span
+          class="contact-arrow"
+          aria-hidden="true"
+        >
+          ↗
+        </span>
+
+      </a>
+
+
+      <!-- PHONE -->
+
+      <a
+        class="contact-item"
+        href="tel:+16308823192"
+      >
+
+        <div
+          class="contact-icon"
+          aria-hidden="true"
+        >
+          ☎
+        </div>
+
+        <div class="contact-item-content">
+
+          <span data-i18n="phoneLabel">
+            Contact
+          </span>
+
+          <strong>
+            +1 (630) 882-3192
+          </strong>
+
+        </div>
+
+        <span
+          class="contact-arrow"
+          aria-hidden="true"
+        >
+          ↗
+        </span>
+
+      </a>
+
+
+      <!-- ADDRESS -->
+
+      <div class="contact-item contact-item-static">
+
+        <div
+          class="contact-icon"
+          aria-hidden="true"
+        >
+          ⌂
+        </div>
+
+        <div class="contact-item-content">
+
+          <span data-i18n="addressLabel">
+            Address
+          </span>
+
+          <strong>
+            Together for Children
+          </strong>
+
+          <!--
+            IMPORTANT:
+            Replace this placeholder address
+            with the confirmed organization
+            address before production.
+          -->
+
+          <p>
+            123 Example Street<br>
+            Naperville, IL 60540<br>
+            USA
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
 
   </main>
+
+
+<!-- ========================================
+     FOOTER
+========================================= -->
+
+<footer class="site-footer">
+
+  <div class="container footer-container">
+
+
+    <!-- ==================================
+         TOP
+    =================================== -->
+
+    <div class="footer-main">
+
+
+      <!-- Brand -->
+
+      <div class="footer-brand">
+
+        <a
+          href="#"
+          class="footer-logo"
+          aria-label="Together for Children home"
+        >
+
+          <span
+            class="footer-logo-mark"
+            aria-hidden="true"
+          >
+            T
+          </span>
+
+          <span>
+            Together for Children
+          </span>
+
+        </a>
+
+
+        <p data-i18n="footerDescription">
+          Supporting children with essential needs,
+          education, healthcare, protection and
+          opportunities for a brighter future.
+        </p>
+
+
+        <button
+          class="btn btn-primary donate-trigger"
+          type="button"
+          data-i18n="donate"
+        >
+          Donate now
+        </button>
+
+      </div>
+
+
+      <!-- Navigation -->
+
+      <div class="footer-column">
+
+        <h3 data-i18n="footerExplore">
+          Explore
+        </h3>
+
+        <nav
+          class="footer-links"
+          aria-label="Footer navigation"
+        >
+
+          <a
+            href="#story"
+            data-i18n="navStory"
+          >
+            Our Story
+          </a>
+
+          <a
+            href="#authorization"
+            data-i18n="authorizationNav"
+          >
+            Authorization &amp; Support
+          </a>
+
+          <a
+            href="#help"
+            data-i18n="navHelp"
+          >
+            How We Help
+          </a>
+
+          <a
+            href="#contact"
+            data-i18n="navContact"
+          >
+            Contact
+          </a>
+
+        </nav>
+
+      </div>
+
+
+      <!-- Contact -->
+
+      <div class="footer-column">
+
+        <h3 data-i18n="footerContact">
+          Contact
+        </h3>
+
+        <div class="footer-contact">
+
+          <a href="mailto:togetherforchildrenorg@gmail.com">
+            togetherforchildrenorg@gmail.com
+          </a>
+
+          <a href="tel:+16308823192">
+            +1 (630) 882-3192
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- Language -->
+
+      <div class="footer-column">
+
+        <h3 data-i18n="footerLanguage">
+          Language
+        </h3>
+
+
+        <div
+          class="language-switcher footer-language-switcher"
+          role="group"
+          aria-label="Language"
+        >
+
+          <button
+            class="language-button active"
+            type="button"
+            data-language="en"
+          >
+            EN
+          </button>
+
+          <span aria-hidden="true">
+            /
+          </span>
+
+          <button
+            class="language-button"
+            type="button"
+            data-language="de"
+          >
+            DE
+          </button>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+
+    <!-- ==================================
+         BOTTOM
+    =================================== -->
+
+    <div class="footer-bottom">
+
+      <p>
+        ©
+        <span id="currentYear"></span>
+        Together for Children.
+        <span data-i18n="rightsReserved">
+          All rights reserved.
+        </span>
+      </p>
+
+
+      <div class="footer-legal">
+
+        <a
+          href="./privacy.html"
+          data-i18n="privacyPolicy"
+        >
+          Privacy Policy
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
 
 
 <!-- ========================================
@@ -825,160 +1469,869 @@
       <span></span>
     </button>
 
-
     <!-- ====================================
-         HEADER
+         DONATION STEP 1 — AMOUNT
     ===================================== -->
 
-    <div class="donation-modal-header">
+    <div
+      class="donation-step active"
+      id="donationAmountStep"
+    >
 
-      <div class="bitcoin-mark">
-        ₿
+      <div class="donation-modal-header">
+
+        <span
+          class="section-label"
+          data-i18n="donationLabel"
+        >
+          Support our mission
+        </span>
+
+        <h2
+          id="donationModalTitle"
+          data-i18n="donationTitle"
+        >
+          Make a donation
+        </h2>
+
+        <p data-i18n="donationIntro">
+          Choose an amount to support children
+          and communities in need.
+        </p>
+
       </div>
 
-      <span class="section-label">
-        Support our mission
-      </span>
 
-      <h2 id="donationModalTitle">
-        Donate with Bitcoin
-      </h2>
+      <!-- ==================================
+           AMOUNT HEADING
+      =================================== -->
 
-      <p>
-        Your contribution can help provide education,
-        healthcare, food, essential supplies, and
-        opportunities for children in need.
+      <div class="donation-amount-heading">
+
+        <h3 data-i18n="chooseAmount">
+          Choose an amount
+        </h3>
+
+        <p data-i18n="chooseAmountHint">
+          Select one of the suggested amounts
+          or enter your own.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================
+           SUGGESTED AMOUNTS
+      =================================== -->
+
+      <div
+        class="donation-amount-grid"
+        id="donationAmountGrid"
+      >
+
+
+        <!-- €10 -->
+
+        <button
+          class="donation-amount-option"
+          type="button"
+          data-amount="10"
+          aria-pressed="false"
+        >
+
+          <span class="donation-amount">
+            €10
+          </span>
+
+          <span
+            class="donation-amount-description"
+            data-i18n="amount10"
+          >
+            Basic supplies
+          </span>
+
+        </button>
+
+
+        <!-- €25 -->
+
+        <button
+          class="donation-amount-option"
+          type="button"
+          data-amount="25"
+          aria-pressed="false"
+        >
+
+          <span class="donation-amount">
+            €25
+          </span>
+
+          <span
+            class="donation-amount-description"
+            data-i18n="amount25"
+          >
+            Food / essential support
+          </span>
+
+        </button>
+
+
+        <!-- €50 -->
+
+        <button
+          class="donation-amount-option"
+          type="button"
+          data-amount="50"
+          aria-pressed="false"
+        >
+
+          <span class="donation-amount">
+            €50
+          </span>
+
+          <span
+            class="donation-amount-description"
+            data-i18n="amount50"
+          >
+            Education or school supplies
+          </span>
+
+        </button>
+
+
+        <!-- €100 -->
+
+        <button
+          class="donation-amount-option"
+          type="button"
+          data-amount="100"
+          aria-pressed="false"
+        >
+
+          <span class="donation-amount">
+            €100
+          </span>
+
+          <span
+            class="donation-amount-description"
+            data-i18n="amount100"
+          >
+            Larger direct assistance
+          </span>
+
+        </button>
+
+
+        <!-- €250 -->
+
+        <button
+          class="donation-amount-option"
+          type="button"
+          data-amount="250"
+          aria-pressed="false"
+        >
+
+          <span class="donation-amount">
+            €250
+          </span>
+
+          <span
+            class="donation-amount-description"
+            data-i18n="amount250"
+          >
+            Support for a specific project
+          </span>
+
+        </button>
+
+
+        <!-- €500 -->
+
+        <button
+          class="donation-amount-option"
+          type="button"
+          data-amount="500"
+          aria-pressed="false"
+        >
+
+          <span class="donation-amount">
+            €500
+          </span>
+
+          <span
+            class="donation-amount-description"
+            data-i18n="amount500"
+          >
+            Major project contribution
+          </span>
+
+        </button>
+
+      </div>
+
+
+      <!-- ==================================
+           OTHER AMOUNT
+      =================================== -->
+
+      <div class="other-amount-section">
+
+        <button
+          class="other-amount-toggle"
+          id="otherAmountToggle"
+          type="button"
+          aria-expanded="false"
+        >
+
+          <span>
+
+            <strong data-i18n="otherAmount">
+              Other amount
+            </strong>
+
+            <small data-i18n="otherAmountDescription">
+              Choose your own donation amount
+            </small>
+
+          </span>
+
+          <span
+            class="other-amount-arrow"
+            aria-hidden="true"
+          >
+            +
+          </span>
+
+        </button>
+
+
+        <div
+          class="other-amount-field"
+          id="otherAmountField"
+        >
+
+          <label
+            for="customDonationAmount"
+            data-i18n="enterAmount"
+          >
+            Enter amount
+          </label>
+
+
+          <div class="currency-input">
+
+            <span aria-hidden="true">
+              €
+            </span>
+
+            <input
+              id="customDonationAmount"
+              type="number"
+              inputmode="decimal"
+              min="1"
+              step="1"
+              placeholder="0"
+              autocomplete="off"
+            />
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================
+           ERROR
+      =================================== -->
+
+      <p
+        class="donation-selection-error"
+        id="donationSelectionError"
+        aria-live="polite"
+      ></p>
+
+
+      <!-- ==================================
+           CONTINUE
+      =================================== -->
+
+      <button
+        class="btn btn-primary donation-continue-button"
+        id="donationAmountContinue"
+        type="button"
+        data-i18n="continueDonation"
+      >
+        Continue
+      </button>
+
+
+      <p
+        class="donation-payment-note"
+        data-i18n="paymentNote"
+      >
+        Payment will be made with Bitcoin in the
+        following step.
       </p>
 
     </div>
 
 
     <!-- ====================================
-         QR CODE
+         DONATION STEP 2 — DONOR INFORMATION
     ===================================== -->
 
-    <div class="donation-qr-section">
+    <div
+      class="donation-step"
+      id="donorInformationStep"
+    >
 
-      <div class="donation-qr-card">
+      <!-- Back -->
 
-        <img
-          src="./assets/images/bitcoin-qr.png"
-          alt="Bitcoin donation QR code"
-          class="donation-qr-image"
-        />
+      <button
+        class="donation-back-button"
+        id="donorBackButton"
+        type="button"
+      >
+        <span aria-hidden="true">←</span>
+
+        <span data-i18n="back">
+          Back
+        </span>
+      </button>
+
+
+      <!-- Header -->
+
+      <div class="donation-modal-header">
+
+        <span
+          class="section-label"
+          data-i18n="donorInformationLabel"
+        >
+          Your information
+        </span>
+
+        <h2 data-i18n="donorInformationTitle">
+          Tell us about your donation.
+        </h2>
+
+        <p data-i18n="donorInformationIntro">
+          Enter your name and let us know what you would
+          like your donation to support.
+        </p>
 
       </div>
 
-      <div class="donation-qr-info">
 
-        <span class="donation-qr-title">
-          Scan to donate
-        </span>
+      <!-- ==================================
+           DONATION SUMMARY
+      =================================== -->
 
-        <span class="donation-qr-subtitle">
-          Open your Bitcoin wallet and scan this QR code
-        </span>
-
-      </div>
-
-    </div>
-
-
-    <!-- ====================================
-         DIVIDER
-    ===================================== -->
-
-    <div class="donation-divider">
-
-      <span>
-        or copy the address
-      </span>
-
-    </div>
-
-    <!-- ====================================
-         WALLET ADDRESS
-    ===================================== -->
-
-    <div class="wallet-section">
-
-      <div class="wallet-heading">
+      <div class="donor-donation-summary">
 
         <div>
 
-          <span class="wallet-label">
-            Bitcoin address
+          <span
+            class="donor-summary-label"
+            data-i18n="yourDonation"
+          >
+            Your donation
           </span>
 
-          <span class="wallet-network">
-            Bitcoin Network
+          <strong
+            class="donor-summary-amount"
+            id="donorSummaryAmount"
+          >
+            €0
+          </strong>
+
+        </div>
+
+
+        <button
+          class="donor-change-amount"
+          id="changeDonationAmount"
+          type="button"
+          data-i18n="changeAmount"
+        >
+          Change
+        </button>
+
+      </div>
+
+
+      <!-- ==================================
+           FORM
+      =================================== -->
+
+      <form
+        class="donor-information-form"
+        id="donorInformationForm"
+        novalidate
+      >
+
+        <!-- NAME -->
+
+        <div class="donor-field">
+
+          <label for="donorName">
+
+            <span data-i18n="yourName">
+              Your name
+            </span>
+
+            <span
+              class="required-mark"
+              aria-hidden="true"
+            >
+              *
+            </span>
+
+          </label>
+
+
+          <input
+            id="donorName"
+            name="donorName"
+            type="text"
+            autocomplete="name"
+            maxlength="100"
+            required
+            data-i18n-placeholder="namePlaceholder"
+            placeholder="Enter your name"
+          />
+
+
+          <p
+            class="donor-field-error"
+            id="donorNameError"
+            aria-live="polite"
+          ></p>
+
+        </div>
+
+
+        <!-- SUPPORT PURPOSE -->
+
+        <div class="donor-field">
+
+          <label for="supportPurpose">
+
+            <span data-i18n="supportQuestion">
+              What would you like your donation to support?
+            </span>
+
+          </label>
+
+
+          <select
+            id="supportPurpose"
+            name="supportPurpose"
+          >
+
+            <option
+              value="where-most-needed"
+              data-i18n="supportMostNeeded"
+            >
+              Where most needed
+            </option>
+
+            <option
+              value="education"
+              data-i18n="supportEducation"
+            >
+              Education
+            </option>
+
+            <option
+              value="food"
+              data-i18n="supportFood"
+            >
+              Food &amp; Nutrition
+            </option>
+
+            <option
+              value="healthcare"
+              data-i18n="supportHealthcare"
+            >
+              Healthcare
+            </option>
+
+            <option
+              value="essentials"
+              data-i18n="supportEssentials"
+            >
+              Clothing &amp; Essentials
+            </option>
+
+            <option
+              value="child-protection"
+              data-i18n="supportProtection"
+            >
+              Child Protection &amp; Support
+            </option>
+
+            <option
+              value="community"
+              data-i18n="supportCommunity"
+            >
+              Community Projects
+            </option>
+
+            <option
+              value="emergency"
+              data-i18n="supportEmergency"
+            >
+              Emergency Assistance
+            </option>
+
+          </select>
+
+
+          <p
+            class="donor-field-help"
+            data-i18n="supportHelp"
+          >
+            This tells us which area you would prefer your
+            donation to support.
+          </p>
+
+        </div>
+
+
+        <!-- NOTICE -->
+
+        <div class="donor-information-notice">
+
+          <span
+            class="donor-information-notice-icon"
+            aria-hidden="true"
+          >
+            i
+          </span>
+
+          <p data-i18n="donorPrivacyNotice">
+            Your information is used in connection with
+            your donation and is not sold or rented.
+          </p>
+
+        </div>
+
+
+        <!-- CONTINUE -->
+
+        <button
+          class="btn btn-primary donor-continue-button"
+          type="submit"
+          data-i18n="continueToPayment"
+        >
+          Continue to payment
+        </button>
+
+      </form>
+
+
+      <p
+        class="donor-payment-note"
+        data-i18n="bitcoinPaymentNote"
+      >
+        Payment will be completed using Bitcoin.
+
+      </p>
+
+    </div>
+
+
+    <!-- ====================================
+         DONATION STEP 3 — BITCOIN PAYMENT
+    ===================================== -->
+
+    <div
+      class="donation-step"
+      id="bitcoinPaymentStep"
+    >
+
+      <!-- Back -->
+
+      <button
+        class="donation-back-button"
+        id="paymentBackButton"
+        type="button"
+      >
+        <span aria-hidden="true">←</span>
+
+        <span data-i18n="back">
+          Back
+        </span>
+      </button>
+
+
+      <!-- Header -->
+
+      <div class="donation-modal-header">
+
+        <div
+          class="bitcoin-mark"
+          aria-hidden="true"
+        >
+          ₿
+        </div>
+
+        <span
+          class="section-label"
+          data-i18n="paymentLabel"
+        >
+          Bitcoin payment
+        </span>
+
+        <h2 data-i18n="modalTitle">
+          Donate with Bitcoin
+        </h2>
+
+        <p data-i18n="paymentIntro">
+          Review your donation details and use the
+          Bitcoin address below to complete your donation.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================
+           DONATION SUMMARY
+      =================================== -->
+
+      <div class="payment-summary">
+
+        <div class="payment-summary-header">
+
+          <span data-i18n="donationSummary">
+            Donation summary
+          </span>
+
+          <button
+            class="payment-edit-button"
+            id="editDonationInformation"
+            type="button"
+            data-i18n="edit"
+          >
+            Edit
+          </button>
+
+        </div>
+
+
+        <div class="payment-summary-row">
+
+          <span data-i18n="amount">
+            Amount
+          </span>
+
+          <strong id="paymentSummaryAmount">
+            €0
+          </strong>
+
+        </div>
+
+
+        <div class="payment-summary-row">
+
+          <span data-i18n="donor">
+            Donor
+          </span>
+
+          <strong id="paymentSummaryDonor">
+            —
+          </strong>
+
+        </div>
+
+
+        <div class="payment-summary-row">
+
+          <span data-i18n="supporting">
+            Supporting
+          </span>
+
+          <strong id="paymentSummaryPurpose">
+            —
+          </strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================
+           QR CODE
+      =================================== -->
+
+      <div class="donation-qr-section">
+
+        <div class="donation-qr-card">
+
+          <img
+            src="./assets/images/bitcoin-qr.png"
+            alt="Bitcoin donation QR code"
+            class="donation-qr-image"
+          />
+
+        </div>
+
+
+        <div class="donation-qr-info">
+
+          <span
+            class="donation-qr-title"
+            data-i18n="scanDonate"
+          >
+            Scan to donate
+          </span>
+
+          <span
+            class="donation-qr-subtitle"
+            data-i18n="scanInstructions"
+          >
+            Open your Bitcoin wallet and scan this QR code
+          </span>
+
+        </div>
+
+      </div>
+
+
+      <!-- ==================================
+           DIVIDER
+      =================================== -->
+
+      <div class="donation-divider">
+
+        <span data-i18n="orCopyAddress">
+          or copy the address
+        </span>
+
+      </div>
+
+
+      <!-- ==================================
+           WALLET ADDRESS
+      =================================== -->
+
+      <div class="wallet-section">
+
+        <div class="wallet-heading">
+
+          <div>
+
+            <span
+              class="wallet-label"
+              data-i18n="bitcoinAddress"
+            >
+              Bitcoin address
+            </span>
+
+            <span
+              class="wallet-network"
+              data-i18n="bitcoinNetwork"
+            >
+              Bitcoin Network
+            </span>
+
+          </div>
+
+
+          <span class="network-badge">
+            BTC
           </span>
 
         </div>
 
 
-        <span class="network-badge">
-          BTC
-        </span>
+        <div class="wallet-address-box">
 
-      </div>
+          <code id="btcAddress">
+            YOUR_BTC_WALLET_ADDRESS_HERE
+          </code>
+
+          <button
+            class="wallet-copy-button"
+            id="copyWalletButton"
+            type="button"
+            data-i18n="copy"
+          >
+            Copy
+          </button>
+
+        </div>
 
 
-      <div class="wallet-address-box">
-
-        <code id="btcAddress">
-          12XtNe4KkAaipvk9aBgzWLL7mePugvGSfM
-        </code>
-
-        <button
-          class="wallet-copy-button"
-          id="copyWalletButton"
-          type="button"
+        <p
+          class="wallet-verification-message"
+          data-i18n="verifyWallet"
         >
-          Copy
-        </button>
+          Verify the wallet address before sending.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================
+           WARNING
+      =================================== -->
+
+      <div class="donation-notice">
+
+        <div
+          class="donation-notice-icon"
+          aria-hidden="true"
+        >
+          !
+        </div>
+
+        <p data-i18n="bitcoinWarning">
+          Send only Bitcoin (BTC) using the Bitcoin
+          network. Always verify that the wallet address
+          in your wallet matches the address shown above
+          before sending.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================
+           EUR NOTICE
+      =================================== -->
+
+      <div class="payment-currency-notice">
+
+        <p data-i18n="currencyNotice">
+          The euro amount shown above represents your
+          intended donation amount. The Bitcoin amount
+          you send may vary according to the exchange
+          rate used by your wallet or exchange.
+        </p>
+
+      </div>
+
+
+      <!-- ==================================
+           HELP
+      =================================== -->
+
+      <div class="donation-modal-footer">
+
+        <p data-i18n="needDonationHelp">
+          Need help with your donation?
+        </p>
+
+        <a href="mailto:togetherforchildrenorg@gmail.com">
+          togetherforchildrenorg@gmail.com
+        </a>
 
       </div>
 
     </div>
 
-
-    <!-- ====================================
-         SECURITY NOTICE
-    ===================================== -->
-
-    <div class="donation-notice">
-
-      <div class="donation-notice-icon">
-        !
-      </div>
-
-      <p>
-        Send only Bitcoin (BTC) using the Bitcoin network.
-        Always verify that the wallet address in your wallet
-        matches the address shown above before sending.
-      </p>
-
-    </div>
-
-
-    <!-- ====================================
-         CONTACT
-    ===================================== -->
-
-    <div class="donation-modal-footer">
-
-      <p>
-        Need help with your donation?
-      </p>
-
-      <a
-        href="mailto:togetherforchildrenorg@gmail.com"
-      >
-        togetherforchildrenorg@gmail.com
-      </a>
-
-    </div>
 
   </div>
 
