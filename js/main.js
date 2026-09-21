@@ -84,7 +84,7 @@ const translations = {
       "Together, we can give every child a reason to hope.",
 
     heroText:
-      "Together for Children is dedicated to supporting underprivileged children across Africa by providing access to essential needs, education, healthcare, and opportunities for a brighter future.",
+      "Together for Children is dedicated to supporting underprivileged children across world by providing access to essential needs, education, healthcare, and opportunities for a brighter future.",
 
 
     /* STORY */
@@ -535,7 +535,7 @@ const translations = {
       "Gemeinsam können wir jedem Kind einen Grund zur Hoffnung geben.",
 
     heroText:
-      "Together for Children setzt sich dafür ein, benachteiligte Kinder in ganz Afrika zu unterstützen und ihnen Zugang zu grundlegender Versorgung, Bildung, Gesundheitsversorgung und Chancen auf eine bessere Zukunft zu ermöglichen.",
+      "Together for Children setzt sich dafür ein, benachteiligte Kinder in ganz world zu unterstützen und ihnen Zugang zu grundlegender Versorgung, Bildung, Gesundheitsversorgung und Chancen auf eine bessere Zukunft zu ermöglichen.",
 
 
     /* STORY */
