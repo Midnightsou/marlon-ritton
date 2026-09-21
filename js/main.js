@@ -111,6 +111,15 @@ const translations = {
       "Help make a difference",
 
 
+    /* STORY GALLERY */
+
+    galleryLabel:
+      "More moments",
+
+    galleryHint:
+      "Scroll or swipe to see more.",
+
+
     /* AUTHORIZATION */
 
     authorizationLabel:
@@ -551,6 +560,15 @@ const translations = {
 
     helpDifference:
       "Einen Unterschied machen",
+
+
+    /* STORY GALLERY */
+
+    galleryLabel:
+      "Weitere Momente",
+
+    galleryHint:
+      "Scrollen oder wischen, um mehr zu sehen.",
 
 
     /* AUTHORIZATION */
