@@ -2582,7 +2582,7 @@ async function copyBitcoinAddress() {
   if (
     !address ||
     address ===
-      "YOUR_BTC_WALLET_ADDRESS_HERE"
+      "12XtNe4KkAaipvk9aBgzWLL7mePugvGsfM"
   ) {
 
     showTemporaryCopyMessage(
