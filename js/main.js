@@ -502,7 +502,163 @@ const translations = {
       "All rights reserved.",
 
     privacyPolicy:
-      "Privacy Policy"
+      "Privacy Policy",
+
+    privacyPolicyLabel:
+      "Legal",
+
+    privacyPolicyTitle:
+      "Privacy Policy",
+
+    privacyPolicyUpdated:
+      "Last updated: September 2026",
+
+    privacyPolicyIntro:
+      "Together for Children respects your privacy. This Privacy Policy explains how we collect, use, share and protect personal information when you visit our website, make a donation or otherwise contact us.",
+
+    privacyPolicyClose:
+      "Close",
+
+    privacySection1Title:
+      "Who we are",
+
+    privacySection1Text:
+      "Together for Children is a charitable organisation that supports children with essential needs, education, healthcare, protection and opportunities. We are responsible for the personal information described in this policy. You can contact us at togetherforchildrenorg@gmail.com.",
+
+    privacySection2Title:
+      "Information we collect",
+
+    privacySection2Text:
+      "We collect information you provide directly, information collected automatically when you use our website, and information we receive from service providers.",
+
+    privacyCollectList1:
+      "Details you provide, such as your name, email address, phone number and the message you send us.",
+
+    privacyCollectList2:
+      "Donation details, such as the amount you choose, the area you wish to support and the reference used to complete your donation.",
+
+    privacyCollectList3:
+      "Information collected automatically, such as your IP address, browser and device type, the pages you visit and the date and time of your visit.",
+
+    privacySection3Title:
+      "How we use your information",
+
+    privacySection3Text:
+      "We use personal information to:",
+
+    privacyUseList1:
+      "process and acknowledge your donation;",
+
+    privacyUseList2:
+      "respond to your questions and provide support;",
+
+    privacyUseList3:
+      "operate, maintain and improve our website;",
+
+    privacyUseList4:
+      "keep records for accounting, legal and regulatory purposes;",
+
+    privacyUseList5:
+      "protect against fraud, misuse and security incidents;",
+
+    privacyUseList6:
+      "send you updates about our work where you have agreed to receive them.",
+
+    privacySection4Title:
+      "Legal bases for processing",
+
+    privacySection4Text:
+      "Where the General Data Protection Regulation (GDPR) or similar laws apply, we process personal information on one or more of the following legal bases: your consent; the performance of a contract or steps you ask us to take before entering into a contract; our legitimate interests in running our charity and improving our website; and our need to comply with legal obligations.",
+
+    privacySection5Title:
+      "Cookies and similar technologies",
+
+    privacySection5Text:
+      "Our website uses cookies and similar technologies to keep the website working, remember your language choice, understand how the website is used and improve your experience. You can control or delete cookies in your browser settings. If you disable cookies, some parts of the website may not work as intended.",
+
+    privacySection6Title:
+      "How we share information",
+
+    privacySection6Text:
+      "We do not sell or rent your personal information. We may share it with trusted service providers who help us operate our website, process donations and communicate with you, and only to the extent needed to provide those services. We may also share information where we are required to do so by law, to enforce our rights, or to protect the rights, property or safety of our organisation, our beneficiaries or others.",
+
+    privacySection7Title:
+      "Donations and payment information",
+
+    privacySection7Text:
+      "Donations are completed using Bitcoin and other payment methods supported by the website. We do not collect or store your full bank or card details. Bitcoin transactions are recorded on a public blockchain and cannot be removed or changed once they have been sent.",
+
+    privacySection8Title:
+      "Data retention",
+
+    privacySection8Text:
+      "We keep personal information only for as long as necessary to fulfil the purposes described in this policy, to keep required donation and financial records, and to meet legal, accounting and reporting obligations. When information is no longer needed, we delete it or anonymise it.",
+
+    privacySection9Title:
+      "Security",
+
+    privacySection9Text:
+      "We use appropriate technical and organisational measures to protect personal information against loss, misuse and unauthorised access, alteration or disclosure. No method of transmission or storage is completely secure, so we cannot guarantee absolute security.",
+
+    privacySection10Title:
+      "International transfers",
+
+    privacySection10Text:
+      "We may store or process information in countries other than your own. Where we transfer personal information outside the European Economic Area, we take steps to ensure it receives an adequate level of protection, including the use of approved contractual safeguards.",
+
+    privacySection11Title:
+      "Your rights",
+
+    privacySection11Text:
+      "Depending on where you live, you may have the right to:",
+
+    privacyRightsList1:
+      "access the personal information we hold about you;",
+
+    privacyRightsList2:
+      "ask us to correct information that is inaccurate or incomplete;",
+
+    privacyRightsList3:
+      "ask us to delete information we no longer need;",
+
+    privacyRightsList4:
+      "object to or restrict certain processing;",
+
+    privacyRightsList5:
+      "request a copy of your information in a portable format;",
+
+    privacyRightsList6:
+      "withdraw consent at any time, where processing is based on consent;",
+
+    privacyRightsList7:
+      "complain to your local data protection authority.",
+
+    privacyRightsText:
+      "To exercise any of these rights, please contact us at togetherforchildrenorg@gmail.com. We will respond within the time required by applicable law.",
+
+    privacySection12Title:
+      "Children's privacy",
+
+    privacySection12Text:
+      "Our website and services are not directed at children, and we do not knowingly collect personal information from children under 16. If you believe that a child has provided us with personal information, please contact us and we will delete it.",
+
+    privacySection13Title:
+      "Third-party links",
+
+    privacySection13Text:
+      "Our website may contain links to other websites and services that we do not control. This Privacy Policy does not apply to those third parties, and we encourage you to read their privacy policies before providing any personal information.",
+
+    privacySection14Title:
+      "Changes to this policy",
+
+    privacySection14Text:
+      "We may update this Privacy Policy from time to time. When we make material changes, we will publish the updated policy on this page and update the date shown above. We encourage you to review this policy periodically.",
+
+    privacySection15Title:
+      "Contact us",
+
+    privacySection15Text:
+      "If you have any questions or concerns about this Privacy Policy or about how we handle your personal information, please contact us:"
 
   },
 
@@ -953,7 +1109,163 @@ const translations = {
       "Alle Rechte vorbehalten.",
 
     privacyPolicy:
-      "Datenschutzerklärung"
+      "Datenschutzerklärung",
+
+    privacyPolicyLabel:
+      "Rechtliches",
+
+    privacyPolicyTitle:
+      "Datenschutzerklärung",
+
+    privacyPolicyUpdated:
+      "Zuletzt aktualisiert: September 2026",
+
+    privacyPolicyIntro:
+      "Together for Children respektiert Ihre Privatsphäre. Diese Datenschutzerklärung erläutert, wie wir personenbezogene Daten erheben, verwenden, weitergeben und schützen, wenn Sie unsere Website besuchen, eine Spende leisten oder anderweitig mit uns Kontakt aufnehmen.",
+
+    privacyPolicyClose:
+      "Schließen",
+
+    privacySection1Title:
+      "Wer wir sind",
+
+    privacySection1Text:
+      "Together for Children ist eine gemeinnützige Organisation, die Kinder bei grundlegenden Bedürfnissen, Bildung, Gesundheitsversorgung, Schutz und Chancen unterstützt. Wir sind für die in dieser Erklärung beschriebenen personenbezogenen Daten verantwortlich. Sie erreichen uns unter togetherforchildrenorg@gmail.com.",
+
+    privacySection2Title:
+      "Welche Daten wir erheben",
+
+    privacySection2Text:
+      "Wir erheben Daten, die Sie uns direkt mitteilen, Daten, die beim Besuch unserer Website automatisch erfasst werden, sowie Daten, die wir von Dienstleistern erhalten.",
+
+    privacyCollectList1:
+      "Angaben, die Sie uns mitteilen, wie Ihren Namen, Ihre E-Mail-Adresse, Ihre Telefonnummer und Ihre Nachricht.",
+
+    privacyCollectList2:
+      "Spendendetails, wie den gewählten Betrag, den Bereich, den Sie unterstützen möchten, und die für die Spende verwendete Referenz.",
+
+    privacyCollectList3:
+      "Automatisch erhobene Daten, wie Ihre IP-Adresse, Browser- und Gerätetyp, die besuchten Seiten sowie Datum und Uhrzeit Ihres Besuchs.",
+
+    privacySection3Title:
+      "Wie wir Ihre Daten verwenden",
+
+    privacySection3Text:
+      "Wir verwenden personenbezogene Daten, um:",
+
+    privacyUseList1:
+      "Ihre Spende zu bearbeiten und zu bestätigen;",
+
+    privacyUseList2:
+      "Ihre Fragen zu beantworten und Unterstützung zu bieten;",
+
+    privacyUseList3:
+      "unsere Website zu betreiben, zu pflegen und zu verbessern;",
+
+    privacyUseList4:
+      "Aufzeichnungen für buchhalterische, rechtliche und regulatorische Zwecke zu führen;",
+
+    privacyUseList5:
+      "uns vor Betrug, Missbrauch und Sicherheitsvorfällen zu schützen;",
+
+    privacyUseList6:
+      "Ihnen Neuigkeiten über unsere Arbeit zu senden, sofern Sie dem zugestimmt haben.",
+
+    privacySection4Title:
+      "Rechtsgrundlagen der Verarbeitung",
+
+    privacySection4Text:
+      "Soweit die Datenschutz-Grundverordnung (DSGVO) oder vergleichbare Gesetze gelten, verarbeiten wir personenbezogene Daten auf einer oder mehreren der folgenden Rechtsgrundlagen: Ihre Einwilligung; die Erfüllung eines Vertrags oder die Durchführung von Schritten, die Sie vor Vertragsabschluss verlangen; unsere berechtigten Interessen an der Führung unserer Organisation und der Verbesserung unserer Website; sowie die Erfüllung rechtlicher Verpflichtungen.",
+
+    privacySection5Title:
+      "Cookies und ähnliche Technologien",
+
+    privacySection5Text:
+      "Unsere Website verwendet Cookies und ähnliche Technologien, um die Website funktionsfähig zu halten, Ihre Sprachauswahl zu speichern, die Nutzung der Website zu verstehen und Ihr Erlebnis zu verbessern. Sie können Cookies in Ihren Browsereinstellungen verwalten oder löschen. Wenn Sie Cookies deaktivieren, funktionieren möglicherweise einige Teile der Website nicht wie vorgesehen.",
+
+    privacySection6Title:
+      "Weitergabe von Informationen",
+
+    privacySection6Text:
+      "Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht. Wir geben sie an vertrauenswürdige Dienstleister weiter, die uns beim Betrieb der Website, bei der Abwicklung von Spenden und bei der Kommunikation mit Ihnen unterstützen, und nur in dem Umfang, der für diese Leistungen erforderlich ist. Wir können Informationen außerdem weitergeben, wenn wir gesetzlich dazu verpflichtet sind, um unsere Rechte durchzusetzen oder um die Rechte, das Eigentum oder die Sicherheit unserer Organisation, unserer Begünstigten oder Dritter zu schützen.",
+
+    privacySection7Title:
+      "Spenden und Zahlungsinformationen",
+
+    privacySection7Text:
+      "Spenden werden über Bitcoin und andere auf der Website unterstützte Zahlungsmethoden abgewickelt. Wir erheben oder speichern keine vollständigen Bank- oder Kartendaten. Bitcoin-Transaktionen werden in einer öffentlichen Blockchain aufgezeichnet und können nach dem Senden nicht entfernt oder geändert werden.",
+
+    privacySection8Title:
+      "Speicherdauer",
+
+    privacySection8Text:
+      "Wir speichern personenbezogene Daten nur so lange, wie es erforderlich ist, um die in dieser Erklärung beschriebenen Zwecke zu erfüllen, die vorgeschriebenen Spenden- und Finanzunterlagen aufzubewahren und gesetzliche, buchhalterische und Berichtspflichten zu erfüllen. Sobald die Daten nicht mehr benötigt werden, löschen wir sie oder machen sie anonym.",
+
+    privacySection9Title:
+      "Sicherheit",
+
+    privacySection9Text:
+      "Wir setzen geeignete technische und organisatorische Maßnahmen ein, um personenbezogene Daten vor Verlust, Missbrauch sowie unbefugtem Zugriff, unbefugter Änderung oder Offenlegung zu schützen. Keine Übertragungs- oder Speichermethode ist vollständig sicher, daher können wir absolute Sicherheit nicht garantieren.",
+
+    privacySection10Title:
+      "Internationale Übermittlungen",
+
+    privacySection10Text:
+      "Wir können Informationen in anderen Ländern als Ihrem eigenen speichern oder verarbeiten. Wenn wir personenbezogene Daten außerhalb des Europäischen Wirtschaftsraums übermitteln, ergreifen wir Maßnahmen, um ein angemessenes Schutzniveau sicherzustellen, einschließlich anerkannter vertraglicher Garantien.",
+
+    privacySection11Title:
+      "Ihre Rechte",
+
+    privacySection11Text:
+      "Je nach Ihrem Wohnort haben Sie möglicherweise das Recht:",
+
+    privacyRightsList1:
+      "auf Auskunft über die personenbezogenen Daten, die wir über Sie speichern;",
+
+    privacyRightsList2:
+      "die Berichtigung unrichtiger oder unvollständiger Daten zu verlangen;",
+
+    privacyRightsList3:
+      "die Löschung von Daten zu verlangen, die wir nicht mehr benötigen;",
+
+    privacyRightsList4:
+      "der Verarbeitung bestimmter Daten zu widersprechen oder sie einzuschränken;",
+
+    privacyRightsList5:
+      "eine Kopie Ihrer Daten in einem übertragbaren Format zu verlangen;",
+
+    privacyRightsList6:
+      "Ihre Einwilligung jederzeit zu widerrufen, wenn die Verarbeitung auf einer Einwilligung beruht;",
+
+    privacyRightsList7:
+      "sich bei Ihrer zuständigen Datenschutzbehörde zu beschweren.",
+
+    privacyRightsText:
+      "Um eines dieser Rechte auszuüben, kontaktieren Sie uns bitte unter togetherforchildrenorg@gmail.com. Wir antworten innerhalb der gesetzlich vorgeschriebenen Frist.",
+
+    privacySection12Title:
+      "Datenschutz von Kindern",
+
+    privacySection12Text:
+      "Unsere Website und unsere Angebote richten sich nicht an Kinder, und wir erheben wissentlich keine personenbezogenen Daten von Kindern unter 16 Jahren. Wenn Sie der Ansicht sind, dass uns ein Kind personenbezogene Daten mitgeteilt hat, kontaktieren Sie uns bitte, und wir werden diese löschen.",
+
+    privacySection13Title:
+      "Links zu Dritten",
+
+    privacySection13Text:
+      "Unsere Website kann Links zu anderen Websites und Diensten enthalten, die wir nicht kontrollieren. Diese Datenschutzerklärung gilt nicht für diese Dritten. Wir empfehlen Ihnen, deren Datenschutzerklärungen zu lesen, bevor Sie personenbezogene Daten mitteilen.",
+
+    privacySection14Title:
+      "Änderungen dieser Erklärung",
+
+    privacySection14Text:
+      "Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren. Bei wesentlichen Änderungen veröffentlichen wir die aktualisierte Erklärung auf dieser Seite und aktualisieren das oben angegebene Datum. Wir empfehlen Ihnen, diese Erklärung regelmäßig zu prüfen.",
+
+    privacySection15Title:
+      "Kontakt",
+
+    privacySection15Text:
+      "Wenn Sie Fragen oder Bedenken zu dieser Datenschutzerklärung oder zur Verarbeitung Ihrer personenbezogenen Daten haben, kontaktieren Sie uns bitte:"
 
   }
 
@@ -2554,6 +2866,183 @@ document.addEventListener(
 
   }
 );
+/* =========================================
+   PRIVACY POLICY ELEMENTS
+========================================= */
+
+const privacyModal =
+  document.getElementById(
+    "privacyPolicyModal"
+  );
+
+const privacyTriggers =
+  document.querySelectorAll(
+    "[data-privacy-open]"
+  );
+
+const privacyCloseTriggers =
+  document.querySelectorAll(
+    "[data-privacy-close]"
+  );
+
+const privacyCloseButton =
+  document.getElementById(
+    "privacyPolicyClose"
+  );
+
+
+
+/* =========================================
+   OPEN PRIVACY POLICY MODAL
+========================================= */
+
+function openPrivacyModal() {
+
+  /*
+   * Make sure mobile navigation
+   * isn't sitting behind the modal.
+   */
+
+  closeMenu();
+
+
+  privacyModal.classList.add(
+    "active"
+  );
+
+
+  privacyModal.setAttribute(
+    "aria-hidden",
+    "false"
+  );
+
+
+  document.body.classList.add(
+    "privacy-open"
+  );
+
+
+  setTimeout(
+    () => {
+
+      privacyCloseButton.focus();
+
+    },
+    100
+  );
+
+}
+
+
+
+/* =========================================
+   CLOSE PRIVACY POLICY MODAL
+========================================= */
+
+function closePrivacyModal() {
+
+  privacyModal.classList.remove(
+    "active"
+  );
+
+
+  privacyModal.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  document.body.classList.remove(
+    "privacy-open"
+  );
+
+}
+
+
+
+/* =========================================
+   CONNECT PRIVACY POLICY TRIGGERS
+========================================= */
+
+privacyTriggers.forEach(
+  (trigger) => {
+
+    trigger.addEventListener(
+      "click",
+      (event) => {
+
+        event.preventDefault();
+
+        openPrivacyModal();
+
+      }
+    );
+
+  }
+);
+
+
+
+/* =========================================
+   PRIVACY POLICY CLOSE TRIGGERS
+========================================= */
+
+privacyCloseTriggers.forEach(
+  (trigger) => {
+
+    trigger.addEventListener(
+      "click",
+      closePrivacyModal
+    );
+
+  }
+);
+
+
+privacyCloseButton.addEventListener(
+  "click",
+  closePrivacyModal
+);
+
+
+
+/* =========================================
+   PRIVACY POLICY ESCAPE KEY
+========================================= */
+
+document.addEventListener(
+  "keydown",
+  (event) => {
+
+    if (
+      event.key === "Escape" &&
+      privacyModal.classList.contains(
+        "active"
+      )
+    ) {
+
+      closePrivacyModal();
+
+    }
+
+  }
+);
+
+
+
+/* =========================================
+   PRIVACY POLICY DEEP LINK
+========================================= */
+
+if (
+  window.location.hash ===
+  "#privacy-policy"
+) {
+
+  openPrivacyModal();
+
+}
+
 /* =========================================
    COPY WALLET ADDRESS
 ========================================= */
