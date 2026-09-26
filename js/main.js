@@ -62,6 +62,21 @@ const translations = {
 
   en: {
 
+    btcGivingTitle:
+      "Why we accept Bitcoin",
+
+    btcGivingReason:
+      "Bitcoin allows people in different countries to support our work through a direct digital transfer.",
+
+    btcGivingHow:
+      "To donate, buy Bitcoin through a crypto app or exchange, then scan the QR code or copy the BTC address below. Enter your donation amount, check the address, Bitcoin network and any fees, then confirm the transfer.",
+
+    btcGivingFaith:
+      "Matthew 6:3–4 encourages us to give quietly, without seeking recognition. This spirit of humble generosity inspires our work.",
+
+    btcGivingPrivacy:
+      "Bitcoin is not anonymous: transactions are recorded on a public blockchain, and wallets or exchanges may require identification.",
+
     navStory:
       "Our Story",
 
@@ -669,6 +684,21 @@ const translations = {
 
   de: {
 
+    btcGivingTitle:
+      "Warum wir Bitcoin akzeptieren",
+
+    btcGivingReason:
+      "Mit Bitcoin können Menschen aus verschiedenen Ländern unsere Arbeit durch eine direkte digitale Überweisung unterstützen.",
+
+    btcGivingHow:
+      "Um zu spenden, kaufen Sie Bitcoin über eine Krypto-App oder Börse. Scannen Sie anschließend den QR-Code oder kopieren Sie die unten angegebene BTC-Adresse. Geben Sie Ihren Spendenbetrag ein, prüfen Sie die Adresse, das Bitcoin-Netzwerk und mögliche Gebühren und bestätigen Sie die Überweisung.",
+
+    btcGivingFaith:
+      "Matthäus 6,3–4 ermutigt uns, im Stillen zu geben, ohne nach Anerkennung zu suchen. Dieser Gedanke der bescheidenen Großzügigkeit inspiriert unsere Arbeit.",
+
+    btcGivingPrivacy:
+      "Bitcoin ist nicht anonym: Transaktionen werden in einer öffentlichen Blockchain gespeichert. Wallet-Anbieter oder Börsen können zudem einen Identitätsnachweis verlangen.",
+
     navStory:
       "Unsere Geschichte",
 
@@ -691,7 +721,7 @@ const translations = {
       "Gemeinsam können wir jedem Kind einen Grund zur Hoffnung geben.",
 
     heroText:
-      "Together for Children setzt sich dafür ein, benachteiligte Kinder in ganz world zu unterstützen und ihnen Zugang zu grundlegender Versorgung, Bildung, Gesundheitsversorgung und Chancen auf eine bessere Zukunft zu ermöglichen.",
+      "Together for Children setzt sich dafür ein, benachteiligte Kinder auf der ganzen Welt zu unterstützen und ihnen Zugang zu grundlegender Versorgung, Bildung, Gesundheitsversorgung und Chancen auf eine bessere Zukunft zu ermöglichen.",
 
 
     /* STORY */
@@ -1296,15 +1326,14 @@ let currentLanguage =
 
     try {
 
-      return (
-        localStorage.getItem(
-          "language"
-        ) || "en"
-      );
+      const savedLanguage = localStorage.getItem("language");
+      return savedLanguage === "en" || savedLanguage === "de"
+        ? savedLanguage
+        : "de";
 
     } catch (error) {
 
-      return "en";
+      return "de";
 
     }
 

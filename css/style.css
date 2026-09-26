@@ -4717,3 +4717,26 @@ span:last-child {
 .privacy-modal-footer {
   margin-top: 34px;
 }
+/* Bitcoin giving explanation */
+.bitcoin-giving-info {
+  margin: 24px 0;
+  padding: 20px;
+  border-radius: 16px;
+  background: #f6f8fa;
+  text-align: left;
+}
+
+.bitcoin-giving-info h3 {
+  margin: 0 0 12px;
+  font-size: 1rem;
+}
+
+.bitcoin-giving-info p {
+  margin: 0 0 12px;
+  font-size: 0.875rem;
+  line-height: 1.65;
+}
+
+.bitcoin-giving-info p:last-child {
+  margin-bottom: 0;
+}
