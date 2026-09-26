@@ -3093,14 +3093,12 @@ async function copyBitcoinAddress() {
 
 
   /*
-   * Do not allow the placeholder
-   * address to be copied.
+   * Only block copying when no wallet
+   * address has been configured.
    */
 
   if (
-    !address ||
-    address ===
-      "12XtNe4KkAaipvk9aBgzWLL7mePugvGsfM"
+    !address
   ) {
 
     showTemporaryCopyMessage(
